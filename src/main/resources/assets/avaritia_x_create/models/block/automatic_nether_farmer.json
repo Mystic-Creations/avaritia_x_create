@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "avaritia_x_create:block/automatic_nether_farmer_bottom",
+    "up": "avaritia_x_create:block/nautronium_casing",
+    "north": "avaritia_x_create:block/automatic_nether_farmer_front",
+    "east": "avaritia_x_create:block/automatic_nether_farmer_side",
+    "south": "avaritia_x_create:block/automatic_nether_farmer_side",
+    "west": "avaritia_x_create:block/automatic_nether_farmer_side",
+    "particle": "avaritia_x_create:block/automatic_nether_farmer_bottom"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.justmili.axc.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+      "AvaritiaXCreateModRepairItemRecipeMixin"  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

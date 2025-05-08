@@ -1,0 +1,162 @@
+{
+  "mod_elements": [
+    {
+      "name": "AutoWitherFarm",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_wither_farm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/justmili/axc/procedures/AutoWitherFarmProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Automatic Wither Farmer"
+    },
+    {
+      "name": "AutoWitherFarmerGUI",
+      "type": "gui",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_wither_farmer_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/justmili/axc/world/inventory/AutoWitherFarmerGUIMenu.java",
+          "src/main/java/net/justmili/axc/client/gui/AutoWitherFarmerGUIScreen.java",
+          "src/main/java/net/justmili/axc/network/AutoWitherFarmerGUISlotMessage.java"
+        ]
+      },
+      "path": "~/Automatic Wither Farmer"
+    },
+    {
+      "name": "AutoNetherGen",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_nether_gen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/justmili/axc/procedures/AutoNetherGenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/AutoNetherFarmer"
+    },
+    {
+      "name": "AutomaticNetherFarmerGUI",
+      "type": "gui",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automatic_nether_farmer_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/justmili/axc/world/inventory/AutomaticNetherFarmerGUIMenu.java",
+          "src/main/java/net/justmili/axc/client/gui/AutomaticNetherFarmerGUIScreen.java"
+        ]
+      },
+      "path": "~/AutoNetherFarmer"
+    },
+    {
+      "name": "AutomaticNetherFarmer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "automatic_nether_farmer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/avaritia_x_create/models/item/automatic_nether_farmer.json",
+          "src/main/resources/assets/avaritia_x_create/models/block/automatic_nether_farmer.json",
+          "src/main/java/net/justmili/axc/block/AutomaticNetherFarmerBlock.java",
+          "src/main/java/net/justmili/axc/block/entity/AutomaticNetherFarmerBlockEntity.java",
+          "src/main/resources/assets/avaritia_x_create/blockstates/automatic_nether_farmer.json"
+        ]
+      },
+      "path": "~/AutoNetherFarmer"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.avaritia_x_create.automatic_nether_farmer": "Automatic Nether Farmer"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Automatic Wither Farmer",
+        "children": []
+      },
+      {
+        "name": "AutoNetherFarmer",
+        "children": []
+      },
+      {
+        "name": "Crafter",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "avaritia_x_create",
+    "modName": "Avaritia x Create",
+    "version": "1.0.0",
+    "author": "rodx1, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [
+      "avaritia",
+      "create"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.justmili.axc",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

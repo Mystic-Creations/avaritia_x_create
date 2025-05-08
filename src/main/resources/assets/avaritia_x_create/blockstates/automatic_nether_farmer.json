@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "avaritia_x_create:block/automatic_nether_farmer"
+    },
+    "facing=east": {
+      "model": "avaritia_x_create:block/automatic_nether_farmer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "avaritia_x_create:block/automatic_nether_farmer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "avaritia_x_create:block/automatic_nether_farmer",
+      "y": 270
+    }
+  }
+}
