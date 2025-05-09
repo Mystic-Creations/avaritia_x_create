@@ -3,14 +3,16 @@
   "id": "avaritia_x_create",
   "version": "1.0.0",
   "name": "Avaritia x Create",
+  "description": "A mod that combines Avaritia and Create mod, as well as makes automation of some resources much easier.",
   "authors": [
-    "rodx1, MCreator"
+    "JustMili"
   ],
   "contact": {
-    "homepage": "https://mcreator.net",
+    "homepage": "https://modrinth.com/mod/avaritia-x-create",
     "sources": ""
   },
-  "license": "Academic Free License v3.0",
+  "license": "MIT License",
+  "icon": "assets/avaritia_x_create/icon.png",
   "accessWidener": "avaritia_x_create.accesswidener",
   "environment": "*",
   "entrypoints": {
@@ -25,7 +27,8 @@
     "fabricloader": ">=0.14.21",
     "fabric": "*",
     "minecraft": "~1.20",
-    "java": ">=17"
+    "java": ">=17",
+    "fusion": ">=1.0.0"
   },
   "mixins": [
     "avaritia_x_create.mixins.json"

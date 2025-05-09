@@ -3,6 +3,8 @@ run/
 .vscode/
 .gradle/
 build/
+elements/
+models/
 
 # Compiled class file
 *.class

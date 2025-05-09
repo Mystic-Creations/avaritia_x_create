@@ -4,6 +4,7 @@
  */
 package net.justmili.axc.init;
 
+import net.justmili.axc.procedures.NeutroniumNuggetAppliedToIronBlockProcedure;
 import net.justmili.axc.procedures.AutoWitherFarmProcedure;
 import net.justmili.axc.procedures.AutoNetherGenProcedure;
 
@@ -12,5 +13,6 @@ public class AvaritiaXCreateModProcedures {
 	public static void load() {
 		new AutoNetherGenProcedure();
 		new AutoWitherFarmProcedure();
+		new NeutroniumNuggetAppliedToIronBlockProcedure();
 	}
 }

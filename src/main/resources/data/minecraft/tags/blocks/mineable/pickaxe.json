@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "avaritia_x_create:automatic_nether_farmer"
+    "avaritia_x_create:automatic_nether_farmer",
+    "avaritia_x_create:neutronium_casing"
   ]
 }

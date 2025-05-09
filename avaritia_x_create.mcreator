@@ -98,6 +98,7 @@
     {
       "name": "AutomaticNetherFarmer",
       "type": "block",
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automatic_nether_farmer",
@@ -111,12 +112,77 @@
         ]
       },
       "path": "~/AutoNetherFarmer"
+    },
+    {
+      "name": "AvaritiaXCreate",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "avaritia_x_create",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "NeutroniumCasing",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neutronium_casing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/justmili/axc/block/NeutroniumCasingBlock.java",
+          "src/main/resources/assets/avaritia_x_create/models/item/neutronium_casing.json",
+          "src/main/resources/assets/avaritia_x_create/blockstates/neutronium_casing.json",
+          "src/main/resources/assets/avaritia_x_create/models/block/neutronium_casing.json"
+        ]
+      },
+      "path": "~/Casing"
+    },
+    {
+      "name": "NeutroniumNuggetAppliedToIronBlock",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "neutronium_nugget_applied_to_iron_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/justmili/axc/procedures/NeutroniumNuggetAppliedToIronBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Casing"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.avaritia_x_create.neutronium_casing": "Neutronium Casing",
+      "item_group.avaritia_x_create.avaritia_x_create": "Avaritia X Create",
       "block.avaritia_x_create.automatic_nether_farmer": "Automatic Nether Farmer"
     }
   },
@@ -134,6 +200,10 @@
       {
         "name": "Crafter",
         "children": []
+      },
+      {
+        "name": "Casing",
+        "children": []
       }
     ]
   },
@@ -141,20 +211,21 @@
     "modid": "avaritia_x_create",
     "modName": "Avaritia x Create",
     "version": "1.0.0",
-    "author": "rodx1, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "description": "A mod that combines Avaritia and Create mod, as well as makes automation of some resources much easier.",
+    "author": "JustMili",
+    "websiteURL": "https://modrinth.com/mod/avaritia-x-create",
+    "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "requiredMods": [
-      "avaritia",
-      "create"
-    ],
+    "modPicture": "icon",
+    "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "fusion"
+    ],
     "currentGenerator": "fabric-1.20.1",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "-",
     "modElementsPackage": "net.justmili.axc",
     "lockBaseModFiles": false
   },

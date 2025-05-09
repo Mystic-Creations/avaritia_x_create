@@ -15,6 +15,7 @@ package net.justmili.axc;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.justmili.axc.init.AvaritiaXCreateModTabs;
 import net.justmili.axc.init.AvaritiaXCreateModProcedures;
 import net.justmili.axc.init.AvaritiaXCreateModMenus;
 import net.justmili.axc.init.AvaritiaXCreateModItems;
@@ -30,6 +31,8 @@ public class AvaritiaXCreateMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Initializing AvaritiaXCreateMod");
+
+		AvaritiaXCreateModTabs.load();
 
 		AvaritiaXCreateModBlocks.load();
 		AvaritiaXCreateModItems.load();
