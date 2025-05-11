@@ -10,7 +10,7 @@
     "textureBack": "automatic_nether_farmer_side",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 3,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -37,12 +37,12 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 2.0,
-    "resistance": 6.0,
+    "hardness": 5.0,
+    "resistance": 8.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:AvaritiaXCreate"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -65,7 +65,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "IRON",
     "creativePickItem": {
       "value": ""
     },
@@ -128,11 +128,7 @@
     },
     "generateFeature": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
-    ],
+    "blocksToReplace": [],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,

@@ -1,0 +1,82 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north",
+        "processing": false
+      },
+      "apply": {
+        "model": "avaritia_x_create:block/automatic_wither_farmer"
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "processing": true
+      },
+      "apply": {
+        "model": "avaritia_x_create:block/automatic_wither_farmer_processing"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "processing": false
+      },
+      "apply": {
+        "model": "avaritia_x_create:block/automatic_wither_farmer",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "processing": true
+      },
+      "apply": {
+        "model": "avaritia_x_create:block/automatic_wither_farmer_processing",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "processing": false
+      },
+      "apply": {
+        "model": "avaritia_x_create:block/automatic_wither_farmer",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "processing": true
+      },
+      "apply": {
+        "model": "avaritia_x_create:block/automatic_wither_farmer_processing",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "processing": false
+      },
+      "apply": {
+        "model": "avaritia_x_create:block/automatic_wither_farmer",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "processing": true
+      },
+      "apply": {
+        "model": "avaritia_x_create:block/automatic_wither_farmer_processing",
+        "y": 90
+      }
+    }
+  ]
+}

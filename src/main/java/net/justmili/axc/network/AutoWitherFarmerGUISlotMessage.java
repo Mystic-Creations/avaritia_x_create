@@ -1,6 +1,6 @@
-
 package net.justmili.axc.network;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.server.network.ServerGamePacketListenerImpl;
 import net.minecraft.server.level.ServerPlayer;
@@ -15,56 +15,48 @@ import net.fabricmc.fabric.api.networking.v1.PacketSender;
 import java.util.HashMap;
 
 import io.netty.buffer.Unpooled;
+import net.minecraft.world.level.block.state.BlockState;
 
 public class AutoWitherFarmerGUISlotMessage extends FriendlyByteBuf {
-	public AutoWitherFarmerGUISlotMessage(int slot, int x, int y, int z, int changeType, int meta) {
-		super(Unpooled.buffer());
-		writeInt(slot);
-		writeInt(x);
-		writeInt(y);
-		writeInt(z);
-		writeInt(changeType);
-		writeInt(meta);
-	}
+    public AutoWitherFarmerGUISlotMessage(int slot, int x, int y, int z, int changeType, int meta) {
+        super(Unpooled.buffer());
+        writeInt(slot);
+        writeInt(x);
+        writeInt(y);
+        writeInt(z);
+        writeInt(changeType);
+        writeInt(meta);
+    }
 
-	public static void apply(MinecraftServer server, ServerPlayer entity, ServerGamePacketListenerImpl handler, FriendlyByteBuf buf, PacketSender responseSender) {
-		int slot = buf.readInt();
-		double x = buf.readInt();
-		double y = buf.readInt();
-		double z = buf.readInt();
-		int changeType = buf.readInt();
-		int meta = buf.readInt();
-		server.execute(() -> {
-			Level world = entity.level();
-			HashMap guistate = AutoWitherFarmerGUIMenu.guistate;
-			if (slot == 0 && changeType == 0) {
+    public static void apply(MinecraftServer server, ServerPlayer entity,
+                             ServerGamePacketListenerImpl handler, FriendlyByteBuf buf,
+                             PacketSender responseSender) {
+        int slot = buf.readInt();
+        int x = buf.readInt();
+        int y = buf.readInt();
+        int z = buf.readInt();
+        int changeType = buf.readInt();
+        int meta = buf.readInt();
+        server.execute(() -> {
+            Level world = entity.level();
+            // ← Define blockstate here:
+            BlockPos pos = new BlockPos(x, y, z);
+            BlockState blockstate = world.getBlockState(pos);
 
-				AutoWitherFarmProcedure.execute(world, x, y, z);
-			}
-			if (slot == 1 && changeType == 0) {
+            // Your existing guistate fetch:
+            @SuppressWarnings("unchecked")
+            HashMap<String, Object> guistate = AutoWitherFarmerGUIMenu.guistate;
 
-				AutoWitherFarmProcedure.execute(world, x, y, z);
-			}
-			if (slot == 2 && changeType == 0) {
-
-				AutoWitherFarmProcedure.execute(world, x, y, z);
-			}
-			if (slot == 3 && changeType == 0) {
-
-				AutoWitherFarmProcedure.execute(world, x, y, z);
-			}
-			if (slot == 4 && changeType == 0) {
-
-				AutoWitherFarmProcedure.execute(world, x, y, z);
-			}
-			if (slot == 5 && changeType == 0) {
-
-				AutoWitherFarmProcedure.execute(world, x, y, z);
-			}
-			if (slot == 6 && changeType == 0) {
-
-				AutoWitherFarmProcedure.execute(world, x, y, z);
-			}
-		});
-	}
+            // Now call your procedure with the actual blockstate
+            if (changeType == 0) {
+                switch (slot) {
+                    case 0, 1, 2, 3, 4, 5, 6:
+                        AutoWitherFarmProcedure.execute(world, x, y, z, blockstate);
+                        break;
+                    default:
+                        break;
+                }
+            }
+        });
+    }
 }

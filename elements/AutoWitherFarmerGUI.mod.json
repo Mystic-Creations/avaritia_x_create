@@ -24,9 +24,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "AutoWitherFarm"
-          },
           "x": 141,
           "y": 53
         }
@@ -45,9 +42,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "AutoWitherFarm"
-          },
           "x": 159,
           "y": 53
         }
@@ -66,9 +60,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "AutoWitherFarm"
-          },
           "x": 177,
           "y": 53
         }
@@ -87,9 +78,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "AutoWitherFarm"
-          },
           "x": 141,
           "y": 71
         }
@@ -108,9 +96,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "AutoWitherFarm"
-          },
           "x": 159,
           "y": 71
         }
@@ -129,9 +114,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "AutoWitherFarm"
-          },
           "x": 177,
           "y": 71
         }
@@ -150,9 +132,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "AutoWitherFarm"
-          },
           "x": 159,
           "y": 89
         }

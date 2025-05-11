@@ -13,6 +13,10 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -37,13 +41,12 @@
       "type": "gui",
       "sortid": 4,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "auto_wither_farmer_gui",
       "metadata": {
         "files": [
           "src/main/java/net/justmili/axc/world/inventory/AutoWitherFarmerGUIMenu.java",
-          "src/main/java/net/justmili/axc/client/gui/AutoWitherFarmerGUIScreen.java",
-          "src/main/java/net/justmili/axc/network/AutoWitherFarmerGUISlotMessage.java"
+          "src/main/java/net/justmili/axc/client/gui/AutoWitherFarmerGUIScreen.java"
         ]
       },
       "path": "~/Automatic Wither Farmer"
@@ -175,6 +178,24 @@
         ]
       },
       "path": "~/Casing"
+    },
+    {
+      "name": "AutomaticWitherFarmer",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "automatic_wither_farmer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/justmili/axc/block/entity/AutomaticWitherFarmerBlockEntity.java",
+          "src/main/java/net/justmili/axc/block/AutomaticWitherFarmerBlock.java",
+          "src/main/resources/assets/avaritia_x_create/models/block/automatic_wither_farmer.json",
+          "src/main/resources/assets/avaritia_x_create/models/item/automatic_wither_farmer.json",
+          "src/main/resources/assets/avaritia_x_create/blockstates/automatic_wither_farmer.json"
+        ]
+      },
+      "path": "~/Automatic Wither Farmer"
     }
   ],
   "variable_elements": [],
@@ -183,6 +204,7 @@
     "en_us": {
       "block.avaritia_x_create.neutronium_casing": "Neutronium Casing",
       "item_group.avaritia_x_create.avaritia_x_create": "Avaritia X Create",
+      "block.avaritia_x_create.automatic_wither_farmer": "Automatic Wither Farmer",
       "block.avaritia_x_create.automatic_nether_farmer": "Automatic Nether Farmer"
     }
   },
@@ -225,7 +247,7 @@
       "fusion"
     ],
     "currentGenerator": "fabric-1.20.1",
-    "credits": "-",
+    "credits": "VIcTBH",
     "modElementsPackage": "net.justmili.axc",
     "lockBaseModFiles": false
   },
