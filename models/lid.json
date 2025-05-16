@@ -1,0 +1,16 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"3": "avaritia_x_create:block/neutronium_crafter_thingies"
+	},
+	"elements": [
+		{
+			"name": "valve_lid",
+			"from": [-1, 5, 5],
+			"to": [0, 11, 11],
+			"faces": {
+				"west": {"uv": [0, 0, 6, 6], "rotation": 270, "texture": "#3"}
+			}
+		}
+	]
+}

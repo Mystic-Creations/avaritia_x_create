@@ -1,0 +1,20 @@
+{
+  "parent": "block/cube",
+  "type": "fusion:connecting",
+  "connections": [
+    {
+      "type": "fusion:is_same_block"
+    }
+  ],
+  "loader": "fusion:model",
+  "textures": {
+    "down": "avaritia_x_create:block/automatic_wither_farmer_bottom",
+    "up": "avaritia_x_create:block/automatic_wither_farmer_top",
+    "north": "avaritia_x_create:block/automatic_wither_farmer_side",
+    "east": "avaritia_x_create:block/automatic_wither_farmer_side",
+    "south": "avaritia_x_create:block/automatic_wither_farmer_side",
+    "west": "avaritia_x_create:block/automatic_wither_farmer_side",
+    "particle": "avaritia_x_create:block/automatic_wither_farmer_bottom"
+  },
+  "render_type": "solid"
+}

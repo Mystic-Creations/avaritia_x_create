@@ -1,0 +1,41 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "0": {
+      "item": "minecraft:nether_bricks"
+    },
+    "1": {
+      "item": "minecraft:iron_block"
+    },
+    "2": {
+      "item": "avaritia_x_create:neutronium_casing"
+    },
+    "3": {
+      "item": "minecraft:obsidian"
+    },
+    "4": {
+      "item": "create:framed_glass"
+    },
+    "5": {
+      "item": "avaritia:crystal_matrix_ingot"
+    },
+    "6": {
+      "item": "avaritia:neutronium_ingot"
+    },
+    "7": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "pattern": [
+    "61216",
+    "13331",
+    "25452",
+    "07770",
+    "00000"
+  ],
+  "result": {
+    "count": 1,
+    "item": "avaritia_x_create:automatic_nether_farmer"
+  }
+}

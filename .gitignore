@@ -1,10 +1,22 @@
-run/
+run/.fabric
+run/config
+run/data
+run/defaultconfigs
+run/logs
+run/resourcepacks
+run/resources
+run/saves
+run/schematics
+run/options.txt
+run/server.properties
+run/servers.dat
+run/usernamecache.json
+run/usercache.json
+
 .idea/
 .vscode/
 .gradle/
 build/
-elements/
-models/
 
 # Compiled class file
 *.class
@@ -20,6 +32,8 @@ models/
 
 # Package Files #
 *.jar
+!run/mods/*.jar
+!libs/**/*.jar
 *.war
 *.nar
 *.ear
@@ -33,4 +47,3 @@ replay_pid*
 
 # macos
 .DS_Store
-.mcreator

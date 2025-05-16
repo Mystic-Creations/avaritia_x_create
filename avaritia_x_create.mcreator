@@ -3,7 +3,7 @@
     {
       "name": "AutoWitherFarm",
       "type": "procedure",
-      "sortid": 2,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "auto_wither_farm",
@@ -39,8 +39,8 @@
     {
       "name": "AutoWitherFarmerGUI",
       "type": "gui",
-      "sortid": 4,
-      "compiles": true,
+      "sortid": 5,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "auto_wither_farmer_gui",
       "metadata": {
@@ -54,7 +54,7 @@
     {
       "name": "AutoNetherGen",
       "type": "procedure",
-      "sortid": 1,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "auto_nether_gen",
@@ -86,7 +86,7 @@
     {
       "name": "AutomaticNetherFarmerGUI",
       "type": "gui",
-      "sortid": 3,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automatic_nether_farmer_gui",
@@ -101,7 +101,7 @@
     {
       "name": "AutomaticNetherFarmer",
       "type": "block",
-      "sortid": 6,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "automatic_nether_farmer",
@@ -119,6 +119,7 @@
     {
       "name": "AvaritiaXCreate",
       "type": "tab",
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "avaritia_x_create",
@@ -129,7 +130,7 @@
     {
       "name": "NeutroniumCasing",
       "type": "block",
-      "sortid": 7,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "neutronium_casing",
@@ -146,7 +147,7 @@
     {
       "name": "NeutroniumNuggetAppliedToIronBlock",
       "type": "procedure",
-      "sortid": 8,
+      "sortid": 9,
       "compiles": true,
       "locked_code": true,
       "registry_name": "neutronium_nugget_applied_to_iron_block",
@@ -182,7 +183,7 @@
     {
       "name": "AutomaticWitherFarmer",
       "type": "block",
-      "sortid": 9,
+      "sortid": 3,
       "compiles": true,
       "locked_code": true,
       "registry_name": "automatic_wither_farmer",
@@ -196,6 +197,46 @@
         ]
       },
       "path": "~/Automatic Wither Farmer"
+    },
+    {
+      "name": "AutomaticWitherFarmerRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "automatic_wither_farmer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/avaritia_x_create/recipes/automatic_wither_farmer.json"
+        ]
+      },
+      "path": "~/Automatic Wither Farmer"
+    },
+    {
+      "name": "AutomaticNetherFarmerRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "automatic_nether_farmer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/avaritia_x_create/recipes/automatic_nether_farmer.json"
+        ]
+      },
+      "path": "~/AutoNetherFarmer"
+    },
+    {
+      "name": "AutoWitherFarmerGUISlotMessage",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "auto_wither_farmer_gui_slot_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/justmili/axc/network/AutoWitherFarmerGUISlotMessage.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -247,7 +288,7 @@
       "fusion"
     ],
     "currentGenerator": "fabric-1.20.1",
-    "credits": "VIcTBH",
+    "credits": "VIcTBH, Heyimlennon, cheezyking718",
     "modElementsPackage": "net.justmili.axc",
     "lockBaseModFiles": false
   },

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "id": "avaritia_x_create",
-  "version": "1.0.0",
-  "name": "Avaritia x Create",
+  "version": "${version}",
+  "name": "Avaritia X Create",
   "description": "A mod that combines Avaritia and Create mod, as well as makes automation of some resources much easier.",
   "authors": [
     "JustMili"

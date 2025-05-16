@@ -11,8 +11,8 @@ import net.justmili.axc.procedures.AutoNetherGenProcedure;
 @SuppressWarnings("InstantiationOfUtilityClass")
 public class AvaritiaXCreateModProcedures {
 	public static void load() {
-		new AutoNetherGenProcedure();
 		new AutoWitherFarmProcedure();
+		new AutoNetherGenProcedure();
 		new NeutroniumNuggetAppliedToIronBlockProcedure();
 	}
 }

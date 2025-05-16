@@ -15,19 +15,19 @@ import net.justmili.axc.block.AutomaticNetherFarmerBlock;
 import net.justmili.axc.AvaritiaXCreateMod;
 
 public class AvaritiaXCreateModBlocks {
-	public static Block AUTOMATIC_NETHER_FARMER;
 	public static Block NEUTRONIUM_CASING;
+	public static Block AUTOMATIC_NETHER_FARMER;
 	public static Block AUTOMATIC_WITHER_FARMER;
 
 	public static void load() {
-		AUTOMATIC_NETHER_FARMER = register("automatic_nether_farmer", new AutomaticNetherFarmerBlock());
 		NEUTRONIUM_CASING = register("neutronium_casing", new NeutroniumCasingBlock());
+		AUTOMATIC_NETHER_FARMER = register("automatic_nether_farmer", new AutomaticNetherFarmerBlock());
 		AUTOMATIC_WITHER_FARMER = register("automatic_wither_farmer", new AutomaticWitherFarmerBlock());
 	}
 
 	public static void clientLoad() {
-		AutomaticNetherFarmerBlock.clientInit();
 		NeutroniumCasingBlock.clientInit();
+		AutomaticNetherFarmerBlock.clientInit();
 		AutomaticWitherFarmerBlock.clientInit();
 	}
 

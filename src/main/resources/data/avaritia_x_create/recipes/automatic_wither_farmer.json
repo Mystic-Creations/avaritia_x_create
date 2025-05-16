@@ -1,0 +1,38 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "0": {
+      "item": "minecraft:nether_bricks"
+    },
+    "1": {
+      "item": "create:brass_casing"
+    },
+    "2": {
+      "item": "minecraft:chiseled_nether_bricks"
+    },
+    "3": {
+      "item": "minecraft:obsidian"
+    },
+    "4": {
+      "item": "avaritia:crystal_matrix_ingot"
+    },
+    "5": {
+      "item": "avaritia:neutronium_ingot"
+    },
+    "6": {
+    	"item": "avaritia_x_create:neutronium_casing"
+    }
+  },
+  "pattern": [
+    "11211",
+    "14341",
+    "16561",
+    "04340",
+    "00000"
+  ],
+  "result": {
+    "count": 1,
+    "item": "avaritia_x_create:automatic_wither_farmer"
+  }
+}

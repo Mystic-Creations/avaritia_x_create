@@ -17,15 +17,15 @@ import net.justmili.axc.AvaritiaXCreateMod;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 
 public class AvaritiaXCreateModItems {
-	public static Item AUTOMATIC_NETHER_FARMER;
 	public static Item NEUTRONIUM_CASING;
+	public static Item AUTOMATIC_NETHER_FARMER;
 	public static Item AUTOMATIC_WITHER_FARMER;
 
 	public static void load() {
-		AUTOMATIC_NETHER_FARMER = register("automatic_nether_farmer", new BlockItem(AvaritiaXCreateModBlocks.AUTOMATIC_NETHER_FARMER, new Item.Properties()));
-		ItemGroupEvents.modifyEntriesEvent(AvaritiaXCreateModTabs.TAB_AVARITIA_X_CREATE).register(content -> content.accept(AUTOMATIC_NETHER_FARMER));
 		NEUTRONIUM_CASING = register("neutronium_casing", new BlockItem(AvaritiaXCreateModBlocks.NEUTRONIUM_CASING, new Item.Properties()));
 		ItemGroupEvents.modifyEntriesEvent(AvaritiaXCreateModTabs.TAB_AVARITIA_X_CREATE).register(content -> content.accept(NEUTRONIUM_CASING));
+		AUTOMATIC_NETHER_FARMER = register("automatic_nether_farmer", new BlockItem(AvaritiaXCreateModBlocks.AUTOMATIC_NETHER_FARMER, new Item.Properties()));
+		ItemGroupEvents.modifyEntriesEvent(AvaritiaXCreateModTabs.TAB_AVARITIA_X_CREATE).register(content -> content.accept(AUTOMATIC_NETHER_FARMER));
 		AUTOMATIC_WITHER_FARMER = register("automatic_wither_farmer", new BlockItem(AvaritiaXCreateModBlocks.AUTOMATIC_WITHER_FARMER, new Item.Properties()));
 		ItemGroupEvents.modifyEntriesEvent(AvaritiaXCreateModTabs.TAB_AVARITIA_X_CREATE).register(content -> content.accept(AUTOMATIC_WITHER_FARMER));
 	}

@@ -1,0 +1,16 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"3": "avaritia_x_:block/neutronium_crafter_thingies"
+	},
+	"elements": [
+		{
+			"name": "belt_animated",
+			"from": [-0.5, 12, 6],
+			"to": [0.5, 20, 10],
+			"faces": {
+				"west": {"uv": [0, 6, 4, 14], "texture": "#3"}
+			}
+		}
+	]
+}

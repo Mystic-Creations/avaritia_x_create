@@ -6,7 +6,7 @@ sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = 'modid'
-version = '1.0.0'
+version = '0.1-ALPHA'
 group = 'com.yourname.modid'
 actualmodid = 'avaritia_x_create'
 
@@ -46,8 +46,6 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 java {
-    withSourcesJar()
-
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
 }
