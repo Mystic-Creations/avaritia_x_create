@@ -5,8 +5,8 @@ plugins {
 sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
-archivesBaseName = 'modid'
-version = '0.1-ALPHA'
+archivesBaseName = 'Avaritia_X_Create'
+version = '0.2-ALPHA'
 group = 'com.yourname.modid'
 actualmodid = 'avaritia_x_create'
 
