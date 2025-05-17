@@ -272,7 +272,7 @@
   },
   "workspaceSettings": {
     "modid": "avaritia_x_create",
-    "modName": "Avaritia x Create",
+    "modName": "Avaritia X Create",
     "version": "1.0.0",
     "description": "A mod that combines Avaritia and Create mod, as well as makes automation of some resources much easier.",
     "author": "JustMili",
@@ -288,7 +288,7 @@
       "fusion"
     ],
     "currentGenerator": "fabric-1.20.1",
-    "credits": "VIcTBH, Heyimlennon, cheezyking718",
+    "credits": "VIcTBH",
     "modElementsPackage": "net.justmili.axc",
     "lockBaseModFiles": false
   },

@@ -16,6 +16,7 @@ run/usercache.json
 .idea/
 .vscode/
 .gradle/
+.mcreator/workspaceBackups/
 build/
 
 # Compiled class file
